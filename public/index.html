@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+     <link rel="stylesheet preload" as="style" href="../src/css/users/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="../src/css/users/icomoon.css" />
+        <link rel="stylesheet preload" as="style" href="../src/css/users/libs.min.css" />
+        <link rel="stylesheet" href="../src/css/users/index.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+
+    <!-- <script src="../public/assets/js/common.min.js"></script> -->
+    <script src="./assets/js/common.min.js"></script>
+    <!-- <div className="cartOffcanvas offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+      <div className="cartOffcanvas_header d-flex align-items-center justify-content-between">
+          <h2 className="cartOffcanvas_header-title" id="cartOffcanvasLabel">Cart</h2>
+          <button className="cartOffcanvas_header-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+              <i className="icon-close"></i>
+          </button>
+      </div>
+      <div className="cartOffcanvas_body">
+          <ul className="cartOffcanvas_body-list">
+              <li className="cartOffcanvas_body-list_item d-sm-flex align-items-center">
+                  <div className="media">
+                      <a href="product.html" target="_blank" rel="noopener norefferer">
+                          <picture>
+                              <source data-srcset="img/card1.png" srcset="img/card1.png" type="image/webp" />
+                              <img className="lazy" data-src="img/card1.png" src="img/card1.png" alt="media" />
+                          </picture>
+                      </a>
+                  </div>
+                  <div className="main d-flex flex-wrap justify-content-between align-items-end align-items-lg-center">
+                      <a className="main_title" href="product.html" target="_blank" rel="noopener norefferer">
+                          <span className="main_title-product"> Himalayan Salt </span>
+                          <span > <br> 100gm</span>
+                         
+                      </a>
+                     
+                      <div className="main_price">
+                          <span className="price">₹14.98</span>
+                      </div>
+                      <div className="qty d-flex align-items-center justify-content-between">
+                          <span className="qty_minus control disabled d-flex align-items-center">
+                              <i className="icon-minus"></i>
+                          </span>
+                          <input className="qty_amount" type="number" readonly value="1" min="1" max="99" />
+                          <span className="qty_plus control d-flex align-items-center">
+                              <i className="icon-plus"></i>
+                          </span>
+                      </div>
+                      <a className="btn--underline" href="#">Remove</a>
+                  </div>
+              </li>
+              <li className="cartOffcanvas_body-list_item d-sm-flex align-items-center">
+                  <div className="media">
+                      <a href="product.html" target="_blank" rel="noopener norefferer">
+                          <picture>
+                              <source data-srcset="img/card2.png" srcset="img/card2.png" type="image/webp" />
+                              <img className="lazy" data-src="img/card2.png" src="img/card2.png" alt="media" />
+                          </picture>
+                      </a>
+                  </div>
+                  <div className="main d-flex flex-wrap justify-content-between align-items-end align-items-lg-center">
+                      <a className="main_title" href="product.html" target="_blank" rel="noopener norefferer">
+                          <span className="main_title-product">BEYORG Tulsi Powder  - 100% Natural, BioOrganic, With Premium Quality  (100 g)</span>
+                      </a>
+                      <div className="main_price">
+                          <span className="price">₹6.96</span>
+                      </div>
+                      <div className="qty d-flex align-items-center justify-content-between">
+                          <span className="qty_minus control disabled d-flex align-items-center">
+                              <i className="icon-minus"></i>
+                          </span>
+                          <input className="qty_amount" type="number" readonly value="1" min="1" max="99" />
+                          <span className="qty_plus control d-flex align-items-center">
+                              <i className="icon-plus"></i>
+                          </span>
+                      </div>
+                      <a className="btn--underline" href="#">Remove</a>
+                  </div>
+              </li>
+              <li className="cartOffcanvas_body-list_item d-sm-flex align-items-center">
+                  <div className="media">
+                      <a href="product.html" target="_blank" rel="noopener norefferer">
+                          <picture>
+                              <source data-srcset="img/card3.png" srcset="img/card3.png" type="image/webp" />
+                              <img className="lazy" data-src="img/card3.png" src="img/card3.png" alt="media" />
+                          </picture>
+                      </a>
+                  </div>
+                  <div className="main d-flex flex-wrap justify-content-between align-items-end align-items-lg-center">
+                      <a className="main_title" href="product.html" target="_blank" rel="noopener norefferer">
+                          <span className="main_title-product"> Rose Leaf Powder </span>
+                          <span > <br> 100gm</span>
+                      </a>
+                      <div className="main_price">
+                          <span className="price">₹7.49</span>
+                      </div>
+                      <div className="qty d-flex align-items-center justify-content-between">
+                          <span className="qty_minus control disabled d-flex align-items-center">
+                              <i className="icon-minus"></i>
+                          </span>
+                          <input className="qty_amount" type="number" readonly value="1" min="1" max="99" />
+                          <span className="qty_plus control d-flex align-items-center">
+                              <i className="icon-plus"></i>
+                          </span>
+                      </div>
+                      <a className="btn--underline" href="#">Remove</a>
+                  </div>
+              </li>
+          </ul>
+          <div className="cartOffcanvas_body-total d-flex justify-content-between align-items-center">
+              <span>Total</span>
+              <span className="cartTotal">₹29.43</span>
+          </div>
+          <a className="cartOffcanvas_body-btn btn" href="cart.html">Proceed to checkout</a>
+      </div>
+  </div> -->
+        <!-- <script src="../public/assets/js/index.min.js"></script> -->
+        <script src="./assets/js/index.min.js"></script>
+
+        <script src="./assets/js/faq.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+        <!-- <script src="./assets/js/about.min.js"></script>
+        <script src="./assets/js/contacts.min.js"></script>
+        <script src="./assets/js/shop.min.js"></script>
+        <script src="./assets/js/wishlist.min.js"></script>
+        <script src="./assets/js/common.min.js"></script> -->
+
+  </body>
+</html>
